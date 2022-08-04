@@ -125,5 +125,5 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
-./app/model/
-./app/aittextgen/
+app/model/
+app/aittextgen/
