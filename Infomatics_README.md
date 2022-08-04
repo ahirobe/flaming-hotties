@@ -53,7 +53,7 @@ to fix this run
 `sed -i 's/\r$//' entrypoint.sh`
 
 ### How to Use
-(insert description)
+First, 
 ### Technical Stack
 Kaggle: sourcing datasets
 
