@@ -1,14 +1,11 @@
 # Joke Generator Scaffold!
-A quick overview of our 
+A quick overview of our NLP Project!
 
-If you have any questions, feel free to open an issue on [Github](https://github.com/organization-x/omni/issues).
+If you have any questions, we probably won't answer them.
 
-### Video Guide
-[![Deploy a Web Project with Flask](https://img.youtube.com/vi/JUb-PpejA7w/0.jpg)](https://youtu.be/JUb-PpejA7w "Deploy a Web Project with Flask")
+This guide covers how our code works and the resources used.
 
-This guide covers how you can quickly deploy most projects with the [Flask](https://flask.palletsprojects.com/) framework and our omni scaffold.
-
-### Quickstart Guide for Local Development
+### Python
 
 cd into the `/app` folder
 
