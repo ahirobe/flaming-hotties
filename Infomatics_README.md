@@ -55,17 +55,17 @@ to fix this run
 ### How to Use
 
 ### Technical Stack
-Kaggle:
+Kaggle: sourcing datasets
 
-Pandas:
+Pandas: data pre-processing
 
-aitextgen:
+aitextgen: text generation tool
 
-GPT-NEO:
+GPT-NEO: model
 
-HTML/CSS:
+HTML/CSS: frontend development
 
-Flask:
+Flask: backend development
 ### Datasets
 We sourced our datasets from Kaggle. We used the Walks into a Bar jokes dataset (insert link) and the Reddit Dad Jokes dataset (insert link).
 ### Model
