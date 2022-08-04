@@ -24,11 +24,11 @@ from aitextgen import aitextgen
 # ai = aitextgen(model_folder="model/",
 #                tokenizer_file="model/aitextgen.tokenizer.json", to_gpu=False)
 
-ai = aitextgen(model="distilgpt2", to_gpu=False)
-
+ai = aitextgen(model_folder="model/bar/", to_gpu=False)
+ai2 = aitextgen(model_folder="model/dad/", to_gpu=False)
 # setup the webserver
 # port may need to be changed if there are multiple flask servers running on same server
-port = 12345
+port = 43560
 base_url = get_base_url(port)
 
 
@@ -45,21 +45,29 @@ app.secret_key = os.urandom(64)
 
 @app.route(f'{base_url}')
 def home():
-    return render_template('writer_home.html', generated=None)
+    return render_template('Joke_Website.html', generated=None)
 
 
 @app.route(f'{base_url}', methods=['POST'])
 def home_post():
-    return redirect(url_for('results'))
+    return redirect(url_for('bar'))
 
 
-@app.route(f'{base_url}/results/')
-def results():
+@app.route(f'{base_url}/bar/')
+def bar():
     if 'data' in session:
         data = session['data']
         return render_template('Write-your-story-with-AI.html', generated=data)
     else:
         return render_template('Write-your-story-with-AI.html', generated=None)
+
+@app.route(f'{base_url}/dad/')
+def dad():
+    if 'data' in session:
+        data = session['data']
+        return render_template('Model_Website.html', generated=data)
+    else:
+        return render_template('Model_Website.html', generated=None)
 
 
 @app.route(f'{base_url}/generate_text/', methods=["POST"])
@@ -75,13 +83,34 @@ def generate_text():
             batch_size=3,
             prompt=str(prompt),
             max_length=300,
-            temperature=0.9,
+            temperature=0.7,
             return_as_list=True
         )
 
     data = {'generated_ls': generated}
     session['data'] = generated[0]
-    return redirect(url_for('results'))
+    return redirect(url_for('bar'))
+
+
+@app.route(f'{base_url}/generate_text_dad/', methods=["POST"])
+def generate_text_dad():
+
+    #view function that will return json response for generated text. 
+
+    prompt = request.form['prompt']
+    if prompt is not None:
+        generated = ai2.generate(
+            n=1,
+            batch_size=3,
+            prompt=str(prompt),
+            max_length=200,
+            temperature=0.7,
+            return_as_list=True
+        )
+
+    data = {'generated_ls': generated}
+    session['data'] = generated[0]
+    return redirect(url_for('dad'))
 
 # define additional routes here
 # for example:
@@ -92,7 +121,7 @@ def generate_text():
 
 if __name__ == '__main__':
     # IMPORTANT: change url to the site where you are editing this file.
-    website_url = 'coding.ai-camp.dev'
+    website_url = 'cocalc12.ai-camp.dev'
 
     print(f'Try to open\n\n    https://{website_url}' + base_url + '\n\n')
     app.run(host='0.0.0.0', port=port, debug=True)
