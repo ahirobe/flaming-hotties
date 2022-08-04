@@ -55,11 +55,22 @@ to fix this run
 ### How to Use
 
 ### Technical Stack
-
+Kaggle:
+Pandas:
+aitextgen:
+GPT-NEO:
+HTML/CSS:
+Flask:
 ### Datasets
-
+We sourced our datasets from Kaggle. We used the Walks into a Bar jokes dataset (insert link) and the Reddit Dad Jokes dataset (insert link).
 ### Model
-
+We used a GPT-NEO model and finetuned it to fit our project. (insert brief description of GPT-NEO)
 ### Libraries
-
+(we can do this one if we want, but i dont think its completely necessary)
 ### About the Team
+Product Manager: Ibrahim Shah
+Data Scientists: Aiden Fregoso, Angel Canche
+Machine Learning Engineer: Izzy Bunkers
+Frontend Engineer: Amanda Chung
+Backend Engineer: Abby Hirobe
+Instructor: Chase Adams
