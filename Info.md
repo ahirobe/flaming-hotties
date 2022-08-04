@@ -1,5 +1,5 @@
-# NLP Project Scaffold!
-A scaffold for deploying dockerized flask applications.
+# Joke Generator Scaffold!
+A quick overview of our 
 
 If you have any questions, feel free to open an issue on [Github](https://github.com/organization-x/omni/issues).
 
