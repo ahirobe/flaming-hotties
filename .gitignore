@@ -123,5 +123,7 @@ Thumbs.db
 
 # Files that might appear on external disks
 .Spotlight-V100
-.Trashes./app/model
+.Trashes
+
+./app/model
 ./app/aittextgen
