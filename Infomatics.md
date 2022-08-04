@@ -5,7 +5,7 @@ If you have any questions, we probably won't answer them.
 
 This guide covers how our code works and the resources used.
 
-### Python
+### AI Development and Testing
 
 cd into the `/app` folder
 
@@ -16,7 +16,7 @@ You'll want to edit line 96 of the `main.py` file to either the URL of the cocal
 From there, run `python3 -m main` to start the server on local, most changes while developing will be picked up in realtime by the server. Note that upon cloning this repository an example project with an untrained model will show up upon running `python3 -m main`.
 
 
-### Quickstart Guide for Local Deployment
+### Website Development and Deployment
 
 Make sure docker is installed on your system. Look that up if you don't know what that means.
 
@@ -42,7 +42,7 @@ or
 
 `docker exec -it omni /bin/bash` for an interactive bash terminal (this option only works if the container is running and not stuck in a restart loop)
 
-### Common Issues
+### Flask(Python) Configuration and Setup
 
 `$'\r': command not found` when attempting to start docker container
 
