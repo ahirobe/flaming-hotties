@@ -40,6 +40,7 @@
             <div class="container px-3 px-lg-5 text-center">
                 <br>
             <h1 class="mb-1 text-white">Bar Joke Generator</h1>
+             </div>
         </header>
         <!-- About-->
         <section class="content-section bg-primary" id="trythemodel">
@@ -47,7 +48,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-5">
                         <h2 class="text-light"><strong>Submit a prompt ending with "...walks into a bar" and your joke will appear on the right! </strong></h2>
-                        <p class="text-white">Ex: A man walks into a bar...</p>
+                        <p class="text-white">Ex: A bear walks into a bar...</p>
                         <form action="{{url_for('generate_text')}}" method="POST" source="custom" name="form-1" >
                           <div class="form-group">
                             <textarea class="form-control-lg" rows="4" cols="50" placeholder="Write your prompt here..." required="" id="text_gen_input" name="prompt"></textarea>

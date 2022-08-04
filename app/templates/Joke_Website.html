@@ -13,19 +13,21 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{ url_for('static',filename='/css/styles.css') }}" rel="stylesheet" />
     </head>
+  
+  
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="https://cliparting.com/wp-content/uploads/2016/08/Fire-flame-clip-art-free-vector-for-free-download-about-free-3-2.jpg" alt="Flaming Fuelers" /></a>
+                <a class="navbar-brand" href="https://www.youtube.com/watch?v=klfT41uZniI"><img src="https://cliparting.com/wp-content/uploads/2016/08/Fire-flame-clip-art-free-vector-for-free-download-about-free-3-2.jpg" alt="Flaming Fuelers" /></a>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                       <li class="nav-item">
                       <div class="dropdown">
-                      <button class="dropbtn">GENERATE</button> <!---change background color for button to transparent--->
+                      <button class="dropbtn" style="background-color: transparent">GENERATE</button>
                       <div class="dropdown-content">
-                       <a href={{ url_for('bar')}}>Bar Joke</a>
-                       <a href={{ url_for('dad')}}>Dad Joke</a>
+                       <a href={{ url_for('bar')}} font-family:'Montserrat'>Bar Joke</a>
+                       <a href={{ url_for('dad')}} >Dad Joke</a>
                        </div>
                        </div>
                       </li>
@@ -41,7 +43,7 @@
         <!-- Masthead-->
          <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
-              <h1 class="mb-1 text-primary"; style="font-size:80px">Joke Generator</h1>
+              <h1 class="mb-1 text-white"; style="font-size:80px">Joke Generator</h1> <!--text-primary font color makes it harder to read-->
                 <h2 class="mb-2 text-primary"></h2>
                 <h3 class="mb-5 text-light"><em></em></h3>
                 <div id="conteyre">
@@ -72,7 +74,7 @@
                             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">The Model</h4>
-                        <p class="text-muted">We have multiple models. Each model is trained to generate based on the type of joke model it is. The selected model then generates a joke based on the prompt given.</p>
+                        <p class="text-muted">There are two models. Each model is trained to generate a certain type of joke based on the type of model it is.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -204,7 +206,7 @@
                                 <h4>Week 1</h4>
                                 <h4 class="subheading">Learning Python</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">We began by learning the basics of Python through lectures and cocalc notebooks.</p></div>
+                            <div class="timeline-body"><p class="text-muted">We began by learning the basics of Python through lessons. We would practice on workbooks and develop our skills.</p></div>
                         </div>
                     </li>
                        <li class="timeline-inverted">
@@ -217,26 +219,26 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://www.loghouselife.com/wp-content/uploads/ngg_featured/Answering-the-How-can-NLP-help-me-question.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Week 2</h4>
                                 <h4 class="subheading">Learning about NLP</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                            <div class="timeline-body"><p class="text-muted">We learned about a wide variety of topics surrounding NLP (natural language processing), such as the NLP pipeline and the evolution of NLP.</p></div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://eleuther.ai/images/promo.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">Training Our Model</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">We used a GPT-NEO model and fine-tuned it to fit our needs instead of creating a model from scratch. We trained our model on the pre-processed data several times before it outputted what we wanted it to. </p></div>
+                            <div class="timeline-body"><p class="text-muted">We used a GPT-NEO model and fine-tuned it to fit our needs instead of creating a model from scratch. We trained our model on the pre-processed data several times before it generated what we wanted it to. </p></div>
                         </div>
                     </li>
                   <li>
-                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/about/3.jpg" alt="..." /></div>
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://s3.amazonaws.com/tf-nightingale/2020/07/003-Thinkful-Front-Back-Developer-Blog-1080x1080.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>Week 3</h4>
@@ -246,7 +248,7 @@
                         </div>
                     </li>
                   <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="static/assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://pbs.twimg.com/profile_images/1091226692100665344/728Dur7o_400x400.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="subheading">Making Our Website</h4>
@@ -257,7 +259,7 @@
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
-                                A fun
+                                A Fun
                                 <br>
                                 Journey!
                             </h4>
@@ -270,27 +272,27 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">The Flaming Hotties</h2>
+                    <h2 class="section-heading text-uppercase">The Flaming Fuelers</h2>
                     <h3 class="section-subheading text-muted">Our Amazing Team</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="static/assets/img/team/Ibi.jpg" alt="Ibrahim Shah" />
                             <h4>Ibrahim Shah</h4>
                           <p class="text-muted">Product Manager</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="static/assets/img/team/Aiden9.jpg" alt="Aiden Fregoso" />
                             <h4>Aiden Fregoso</h4>
                             <p class="text-muted">Data Scientist</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="static/assets/img/team/AngelImage.jpg" alt="Angel Canche" />
                             <h4>Angel Canche</h4>
                             <p class="text-muted">Data Scientist</p>
                         </div>
@@ -299,21 +301,21 @@
               <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="static/assets/img/team/Izzy.jpg" alt="Izzy Bunkers" />
                             <h4>Izzy Bunkers</h4>
                             <p class="text-muted">Machine Learning Engineer</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="static/assets/img/team/aman.jpg" alt="Amanda Chung" />
                             <h4>Amanda Chung</h4>
                             <p class="text-muted">Frontend Engineer</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="static/assets/img/team/abby.jpg" alt="Abby Hirobe" />
                             <h4>Abby Hirobe</h4>
                             <p class="text-muted">Backend Engineer</p>
                         </div>
@@ -321,7 +323,7 @@
                 <div align="center">
                 <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="static/assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="static/assets/img/team/chase_pic.jpg" alt="Chase Adams" />
                             <h4>Chase Adams</h4>
                             <p class="text-muted">Instructor</p>
                         </div>
@@ -376,7 +378,7 @@
                                     <h2 class="text-uppercase">GPT-Neo</h2>
                                     <p class="item-intro text-muted">Model</p>
                                     <img class="img-fluid d-block mx-auto" src="https://res.cloudinary.com/apideck/image/upload/v1617661434/marketplaces/ckhg56iu1mkpc0b66vj7fsj3o/listings/oiyg8xqcbgtv61qlzl8j.png" alt="..." style="width:450px;height:400px;"/>
-                                    <p>GPT-Neo is a pre-trained language model released by EleutherAI. While not as good as GPT-3, it offers better performance compared to GPT-2 while also being free to use.</p>
+                                    <p>GPT-Neo is a pre-trained language model released by EleutherAI. Although not as good as GPT-3, it offers better performance compared to GPT-2 while also being free to use.</p>
 
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
@@ -480,7 +482,7 @@
                                     <h2 class="text-uppercase">aitextgen</h2>
                                     <p class="item-intro text-muted">Text Generation</p>
                                     <img class="img-fluid d-block mx-auto" src="static/assets/img/portfolio/aitextgenpic.jpg" alt="..." />
-                                    <p>We used aitextgen to generate our text for our model so it would be able to output the jokes and text from the input of the user. Generating the text that the model creates and then presenting it to the user.</p>
+                                    <p>We used aitextgen to generate our text for our model so it would be able to output the jokes and text from the input of the user.</p>
 
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>

@@ -72,9 +72,7 @@ def dad():
 
 @app.route(f'{base_url}/generate_text/', methods=["POST"])
 def generate_text():
-    """
-    view function that will return json response for generated text. 
-    """
+
 
     prompt = request.form['prompt']
     if prompt is not None:
@@ -95,7 +93,6 @@ def generate_text():
 @app.route(f'{base_url}/generate_text_dad/', methods=["POST"])
 def generate_text_dad():
 
-    #view function that will return json response for generated text. 
 
     prompt = request.form['prompt']
     if prompt is not None:
